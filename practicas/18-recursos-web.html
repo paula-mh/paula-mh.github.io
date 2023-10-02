@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etiquetas HTML</title>
+  <style>
+    pre {
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Etiquetas HTML</h1>
+  <details>
+    <summary>
+      <h3>1. Atributo <i>loading=lazy</i></h3>
+    </summary>
+    Esta primera etiqueta sirve para que la imagen no cargue hasta que el
+    usuario llegue hasta ella Normalmente para optimizar la carga y que no
+    cargue todo al principio.<br />
+    <img src="bs.png" loading="lazy" alt="Icono Brawl Stars" />
+  </details>
+  <br>
+  <br>
+  <br>
+  <details>
+    <summary>
+      <h3>2. Enlaces de email, llamadas y SMS</h3>
+    </summary>
+    Sirve para que al pulsar en un enlace directamente abra un mensaje de
+    email, una aplicación de teléfono para llamar o para enviar un sms.<br />
+    <a href="mailto:email.ejemplo.como">Envíanos un email</a> <br />
+    <a href="tel:123456789">Llámanos</a><br />
+    <a href="sms:123456789">Escríbenos un SMS</a><br />
+  </details>
+  <br>
+  <br>
+  <br>
+  <details>
+    <summary>
+      <h3>3. Atributo <i>start</i> para listas</h3>
+    </summary>
+    Sirve para que una lista ordenada comiente en un número especificado.
+    <ol start="11">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>Go</li>
+    </ol>
+  </details>
+  <br>
+  <br>
+  <br>
+  <details>
+    <summary>
+      <h3>4. Etiqueta <i>meter</i></h3>
+    </summary>
+    Sirve para crear barrar y mostrar cantidades<br />
+    <label for="value1">Bajo</label>
+    <meter id="value1" min="0" max="100" low="30" high="75" optimum="80" value="25"></meter>
+    <br />
+    <label for="value2">Medio</label>
+    <meter id="value2" min="0" max="100" low="30" high="75" optimum="80" value="50"></meter>
+    <br />
+    <label for="value3">Alto</label>
+    <meter id="value3" min="0" max="100" low="30" high="75" optimum="80" value="80"></meter>
+  </details>
+  <br>
+  <br>
+  <br>
+  <details>
+    <summary>
+      <h3>5. Búsqueda nativa en HTML</h3>
+    </summary>
+    Sirve para hacer una búsqueda entre un número de opciones especificado<br />
+    <input list="items" />
+    <datalist id="items">
+      <option value="Opción 1"> </option>
+      <option value="Opción 2"> </option>
+      <option value="Opción 3"> </option>
+      <option value="Opción 4"> </option>
+      <option value="Opción 5"> </option>
+    </datalist>
+  </details>
+  <br>
+  <br>
+  <br>
+  <details>
+    <summary>
+      <h3>6. Etiqueta fieldset</h3>
+    </summary>
+    Sirve para agrupar controles o etiquetas en un formulario
+    <form>
+      <fieldset>
+        <legend>Elige tu opción</legend>
+        <input type="radio" id="opcion1" name="opcion" />
+        <label for="opcion1">Opción 1</label><br />
+        <input type="radio" id="opcion2" name="opcion" />
+        <label for="opcion2">Opcion 2</label><br />
+        <input type="radio" id="opcion3" name="opcion" />
+        <label for="opcion3">Opción 3</label>
+      </fieldset>
+    </form>
+  </details>
+  <br>
+  <br>
+  <br>
+  <details>
+    <summary>
+      <h3>7. Nueva pestaña</h3>
+    </summary>
+    Abre la página en una nueva pestaña
+    <a href="https://paulamh.com/" target="_blank" rel="noopener">
+      Web de Paula</a>
+  </details>
+  <br>
+  <br>
+  <br>
+  <details>
+    <summary>
+      <h3>8. Nueva pestaña</h3>
+    </summary>
+    Esto abre todos los enlaces en una nueva pestaña. Se coloca entre las
+    etiquetas head. <br />
+    <pre>< base target="_blank"></pre>
+  </details>
+  <br>
+  <br>
+  <br>
+  <details>
+    <summary>
+      <h3>9. Última versión favicon</h3>
+    </summary>
+    Sirve para obligar al navegador a mostrar la última versión del favicon.
+    <br />
+    <pre>< link rel="icon" href="/favicon.ico?v=2"/> </pre>
+  </details>
+  <br>
+  <br>
+  <br>
+  <details>
+    <summary>
+      <h3>10. Corrector ortográfico</h3>
+    </summary>
+    Con el atributo spellcheck se pueden corregir errores ortográficos.<br />
+    <label for="input1"><b>
+        <pre>spellcheck="activado" </pre>
+      </b></label><br />
+    <input type="text" id="input1" spellcheck="true" /><br /><br />
+    <label for="input2"><b>
+        <pre>spellcheck="desactivado"</pre>
+      </b></label><br />
+    <input type="text" id="input2" spellcheck="false" />
+  </details>
+  <br>
+  <br>
+  <br>
+  <details>
+    <summary>
+      <h3>11. Controles nativos</h3>
+    </summary>
+    Es un control deslizante, es un tipo de input<br />
+    <pre>< input type="range"> </pre>
+    <br />
+    <label for="volume">Control deslizante:</label>
+    <input type="range" id="volume" name="volume" min="0" max="20" /><br />
+  </details>
+  <br>
+  <br>
+  <br>
+  <details>
+    <summary>
+      <h3>12. Acordeón HTML</h3>
+    </summary>
+    Se utiliza el elemento <i>details</i> para mostrar o esconder parte de la
+    información en un acordeón.<br />
+    <details>
+      <summary>
+        Haz click para ver más detalles.
+      </summary>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut eum
+        perferendis eius. Adipisci velit et similique earum quas illo odio
+        rerum optio, quis, expedita assumenda enim dicta aliquam porro maxime
+        minima sed a ullam, aspernatur corporis.
+      </p>
+    </details>
+  </details>
+  <br>
+  <br>
+  <br>
+  <details>
+  <summary>
+  <h3>13. Etiqueta <i>mark</i></h3>
+</summary>
+  Se utiliza para destacar algún contenido en HTML. <br>
+  Vamos a destacar lo <mark>importante</mark> de este texto.
+  </details>
+  <br>
+  <br>
+  <br>
+<details>
+<summary>
+  <h3>14. Atributo <i>descargar</i></h3>
+</summary>
+  Se utiliza para poder descargar directamente un documento.
+  <a href='/pdfs/repositorio-github.pdf' download> Descargar </a>
+</details>
+  <br>
+  <br>
+  <br>
+<details>
+<summary>
+  <h3>15. Imágenes webp</h3>
+</summary>
+  Se utiliza este formato de imagen para optimizar la web y reducir el tamaño de las imágenes.
+  <picture>
+    <source srcset="bs.webp" type="image/webp">
+    <img src="bs.png" alt="logo">
+  </picture>
+</details>
+  <br>
+  <br>
+  <br>
+<details>
+<summary>
+  <h3>16. Miniatura del vídeo</h3>
+</summary>
+Se utiliza el atributo video poster para indicar una imagen que se mostrará hasta que cargue el vídeo o el usuario le dé a reproducir. <br>
+<video poster="bs.png"></video>
+</details>
+<br>
+<br>
+<br>
+<details>
+<summary>
+<h3>17. Etiqueta <i>search</i></h3>
+</summary>
+<form>
+  <label for="text">Texto</label>
+  <input type="text" id="text" name="text"><br>
+  <label for="search">Búsqueda</label>
+  <input type="search" id="search" name="search">
+</form>
+</details>
+<br>
+<br>
+<br>
+<details>
+<summary>
+<h3>18. Etiqueta <i>pre</i></h3>
+</summary>
+Se utiliza para mostrar texto preformateado.
+<pre> Este es un texto preformateado. </pre>
+</details>
+</body>
+</html>
