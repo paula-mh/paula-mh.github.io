@@ -29,7 +29,7 @@ h2 {
 
 h4 {
     margin-top: 5px;
-    color: #009933;
+    color: #9933FF;
 }
 
 a {
@@ -46,7 +46,6 @@ a:hover {
     margin-left: 20px;
 }
 
-/* Styling for the details tag */
 details {
     border: 1px solid #ddd;
     padding: 10px;
@@ -63,8 +62,6 @@ summary:hover {
     text-decoration: underline;
 }
 
-/* Styling for the links inside the details tag */
 details a {
     display: block;
-    margin-top: 5px;
 }
